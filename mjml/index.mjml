@@ -4,7 +4,7 @@
     <mj-title>JPO du 25 mai 2024 Ecosup Commerce</mj-title>
     <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&amp;display=swap"/>
     <mj-attributes>
-      <mj-all font-family="Roboto, Arial, Helvetica,sans serif" font-weight="400"/>
+      <mj-all font-family="Roboto, Arial, Helvetica, sans serif" font-weight="400"/>
       <mj-class name="d-titre" font-size="38px" line-height="40px" font-weight="700" color="#ec6608"/>
       <mj-class name="d-sous-titre" font-size="16px" line-height="20px" font-weight="700" color="#f1883d"/>
       <mj-class name="d-date" font-size="20px" line-height="24px" font-weight="700" color="#ec6608"/>
@@ -15,6 +15,7 @@
     </mj-attributes>
     <mj-style>
       @media(max-width:480px){
+          .m-footer{
               text-align: center !important;
           }
           .m-footer1{
@@ -25,6 +26,7 @@
               width: 100% !important;
               padding-top:10px !important;
           }
+      }
     </mj-style>
   </mj-head>
   <mj-body background-color="#efefef">
@@ -48,7 +50,7 @@
       <mj-column width="530px">
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-text"><strong>{{ contact.PRENOM }}</strong>, les métiers du Commerce vous intéressent et vous souhaitez entreprendre une <strong>formation en alternance</strong> ?</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-text"><strong>ECOSUP Commerce</strong> vous ouvre ses portes ce </mj-text>
-        <mj-text align="center" mj-class="d-date">Samedi 13 avril de 9h30 à 13h.</mj-text>
+        <mj-text align="center" mj-class="d-date">Samedi 25 mai de 9h30 à 13h.</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-text">Venez découvrir notre campus et rencontrer nos intervenants professionnels.</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-text">Des questions ? Alors rendez-vous ce samedi, toute notre équipe se tiendra à votre disposition pour présenter l'ensemble de nos formations.        </mj-text>
       </mj-column>
@@ -58,28 +60,22 @@
         <mj-column width="50%" padding="8px">
           <mj-image align="right" padding="0" src="https://img.mailinblue.com/3403292/images/content_library/original/6616fb3812fbe9e05adb27e5.jpg" width="110px" alt="Marie Laurence Wallaert, responsable pédagogique Ecosup Commerce"/>
         </mj-column>
+        <mj-column width="50%" padding="8px">
+          <mj-text padding="0" mj-class="d-text">À Samedi !</mj-text>
+          <mj-text padding="0" mj-class="d-text"><strong>Marie Laurence <span style="text-transform:uppercase">Wallaert</span></strong></mj-text>
+          <mj-text padding="0" mj-class="d-text">Responsable pédagogique</mj-text>
+          <mj-text padding="0" mj-class="d-text">Ecosup Commerce</mj-text>
+        </mj-column>
       </mj-group>
-      <mj-column width="50%" padding="8px">
-        <mj-text padding="0" mj-class="d-text">À Samedi !</mj-text>
-        <mj-text padding="0" mj-class="d-text"><strong>Marie Laurence <span style="text-transform:uppercase">Wallaert</span></strong></mj-text>
-        <mj-text padding="0" mj-class="d-text">Responsable pédagogique</mj-text>
-        <mj-text padding="0" mj-class="d-text">Ecosup Commerce</mj-text>
-      </mj-column>
     </mj-section>
-    <mj-section background-color="#ffffff" padding="0">   
-      <mj-column>
-        <mj-divider width="50%" border-width="2px" border-style="solid" border-color="#ec6608"/>           
-      </mj-column>
-    </mj-section>
-    <mj-section background-color="#ffffff">
+    <mj-section background-color="#dfdfdf">
       <mj-column width="530px">
-        <mj-text font-size="18px" font-weight="700" color="#f1883d" mj-class="d-lieu">Comment s'y rendre ?</mj-text>
+        <mj-text font-size="18px" font-weight="700" color="#ec6608" mj-class="d-lieu" text-transform="uppercase">Comment s'y rendre ?</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-lieu"><b style="color:#ec6608">Accès Métro :</b> Ligne 2 - station Tourcoing Centre.</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-lieu"><b style="color:#ec6608">Accès Tramway :</b> Terminus Tourcoing Centre.</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-lieu"><b style="color:#ec6608">Accès Bus :</b> Gare routière de Tourcoing.</mj-text>
         <mj-text padding-top="0" padding-bottom="0" mj-class="d-lieu"><b style="color:#ec6608">Accès Train :</b> Gare de Tourcoing puis station de Métro Tourcoing Centre.</mj-text>
-        <mj-text padding-top="0" padding-bottom="0" mj-class="d-lieu"><b style="color:#ec6608">Accès Voiture :</b> Tourcoing centre.</mj-text>
-        <mj-spacer height="10px"/>
+        <mj-text padding-top="0" padding-bottom="10px" mj-class="d-lieu"><b style="color:#ec6608">Accès Voiture :</b> Tourcoing centre.</mj-text>
       </mj-column>
     </mj-section>
     <mj-section background-color="#ec6608">
@@ -109,10 +105,9 @@
       </mj-column>
     </mj-section>
     <mj-section>
-      <mj-column width="300px">
-        <mj-text padding="0 25px" mj-class="d-admin">Cet email a été envoyé à {{contact.EMAIL}},</mj-text>
-        <mj-text padding="0 25px" mj-class="d-admin">vous l'avez reçu car vous êtes inscrit à Ecosup Campus.</mj-text>
-        <mj-text padding="0 25px" mj-class="d-admin"><a href="{{ unsubscribe }}">Se désinscrire</a></mj-text>
+      <mj-column width="250px">
+        <mj-text padding="0 30px" mj-class="d-admin">Cet email a été envoyé à {{contact.EMAIL}}, vous l'avez reçu car vous êtes inscrit à Ecosup Campus.</mj-text>
+        <mj-text padding="0 30px" mj-class="d-admin"><a href="{{ unsubscribe }}">Se désinscrire</a></mj-text>
         <mj-spacer height="20px"></mj-spacer>
         <mj-text padding="0 25px" mj-class="d-admin">©2024 ECOSUP CAMPUS</mj-text>
       </mj-column>
